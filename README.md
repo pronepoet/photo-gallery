@@ -1,4 +1,4 @@
-# photo-gallery
+# Zoo animal photo-gallery
 Project files for Final School project phase 1
 
 
