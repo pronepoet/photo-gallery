@@ -11,9 +11,10 @@ function getAnimal(){
 })
 }
 let btn = document.querySelector('button.btn')
-btn = document.addEventListener('click',(event)=>{
-    getAnimal()
-})
+btn = document.addEventListener('click', getAnimal)
+   
+   
+
 
 
 
