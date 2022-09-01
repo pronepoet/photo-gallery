@@ -1,11 +1,15 @@
+
 footer{
-    position:fixed;
-    bottom:0;
-    width:100%;
-    height:40px;
+ 
+    /* height:40px; */
     background-color: black;
     color:aliceblue;
 }
-#animal-card{
-    color:white
+.Site{
+    display:flex;
+    min-height:100vh;
+    flex-direction:column;
 }
+.Site-content {
+    flex: 1;
+  }
