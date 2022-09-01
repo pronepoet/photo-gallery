@@ -10,22 +10,25 @@ function getAnimal(){
     let animalName = document.querySelector('h5#nameOfAni')
     let animalDiet = document.querySelector('p#animalDiet')
     let animalInfo = document.querySelector('p#animalInfo')
-    let btn = document.querySelector('button.btn')
+  let geo = document.querySelector('p#geo-range')
     image.src = data.image_link
     animalName.innerText = data.name
     animalInfo.innerText = `Class of animal is ${data.animal_type}`
     animalDiet.innerText = `Diet consists of ${data.diet}`
-   
+   geo.innerText = `This type of ${data.animal_type} is found in ${data.geo_range}`
    
 })
 }
+function run(){
+    let butn = document.querySelector('generate')
+    butn = document.addEventListener('click', ()=>{
+       console.log('waaj')
+     getAnimal();
+    })
+       
+}
 
-btn = document.addEventListener('click', (event)=>{
-    event.preventDefault();
- getAnimal();
-})
-   
-
+run()
 
 
 
