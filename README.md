@@ -6,9 +6,9 @@ Project files for Final School project phase 1
 - HTML & CSS (Bootstrap)
 - Javascript
 - Zoo animal api [https://zoo-animal-api.herokuapp.com]
-##### Requirements
+## Requirements
 Internet connection to display the bootstrap styling
-##### Setup Instructions and Installation
+## Setup Instructions and Installation
 - Have an internet connection for the api to work
 - Fork the application and navigate to the folder
 - Open index.html file in browser
