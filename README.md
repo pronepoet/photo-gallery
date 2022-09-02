@@ -13,7 +13,7 @@ Internet connection to display the bootstrap styling
 - Fork the application and navigate to the folder
 - Open index.html file in browser
 ## Known Bugs
-keeps listening to click event even when button is not clicked
+N/A
 
 ### License
 MIT Licence
