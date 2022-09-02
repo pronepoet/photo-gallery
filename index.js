@@ -1,41 +1,42 @@
 addEventListener('DOMContentLoaded', (event) => {
 
-
-function getAnimal(){
-  
-   
-    fetch('https://zoo-animal-api.herokuapp.com/animals/rand')
-    .then(response => response.json())
-    .then(data => {
-        console.log(data)
-    let image = document.querySelector('img.card-img')
-    let animalName = document.querySelector('h5#nameOfAni')
-    let animalDiet = document.querySelector('p#animalDiet')
-    let animalInfo = document.querySelector('p#animalInfo')
-    let animalHabitat = document.querySelector('p.habitat')
-  let geo = document.querySelector('p#geo-range')
-    image.src = data.image_link
-    animalName.innerText = data.name
-    animalInfo.innerText = `Class of animal is ${data.animal_type}`
-    animalDiet.innerText = `Diet consists of ${data.diet}`
-   geo.innerText = `This type of ${data.animal_type} is found in ${data.geo_range}`
-   animalHabitat.innerText = `This ${data.animal_type}'s habitat is ${data.habitat}`
-   let butn = document.querySelector('generate')
-   butn = document.addEventListener('click', ()=>{
-      console.log('waaj')
+  let buttonGet = document.querySelector('input#getAnimalss')
       
-   })
+       
+        const fetchAnimal = fetch('https://zoo-animal-api.herokuapp.com/animals/rand')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        let image = document.querySelector('img.card-img')
+        let animalName = document.querySelector('h5#nameOfAni')
+        let animalDiet = document.querySelector('p#animalDiet')
+        let animalInfo = document.querySelector('p#animalInfo')
+        let animalHabitat = document.querySelector('p.habitat')
+      let geo = document.querySelector('p#geo-range')
+        image.src = data.image_link
+        animalName.innerText = data.name
+        animalInfo.innerText = `Class of animal is ${data.animal_type}`
+        animalDiet.innerText = `Diet consists of ${data.diet}`
+       geo.innerText = `This type of ${data.animal_type} is found in ${data.geo_range}`
+       animalHabitat.innerText = `This ${data.animal_type}'s habitat is ${data.habitat}`
+     
+ 
+      
+     })
+     buttonGet = document.addEventListener('click', ()=>{
+        event.preventDefault()
+        
+       return fetchAnimal
+       
+    })
+  
+    
+ 
+    
+
    
-})
-   
-
-}
-
-getAnimal()
-
-
-
-
-});
-
-onDOMContentLoaded = (event) => { };
+    
+    
+    });
+    
+    onDOMContentLoaded = (event) => { };
