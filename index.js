@@ -23,20 +23,12 @@ addEventListener('DOMContentLoaded', (event) => {
  
       
      })
-     buttonGet = document.addEventListener('click', ()=>{
+     buttonGet = document.addEventListener('click', (event)=>{
         event.preventDefault()
         
-       return fetchAnimal
+       fetchAnimal
        
     })
-  
-    
- 
-    
-
-   
-    
-    
     });
     
     onDOMContentLoaded = (event) => { };
