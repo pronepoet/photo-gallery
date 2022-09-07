@@ -29,6 +29,17 @@ addEventListener('DOMContentLoaded', (event) => {
        fetchAnimal
        
     })
+    
+   // jquery code
+   let btnShow = document.querySelector('button#show_content')
+   $(document).ready(function(){
+   $(btnShow).click(function(){
+     $().hide();
+   })
+
+   })
+   //end of jquery
+    
     });
     
     onDOMContentLoaded = (event) => { };
