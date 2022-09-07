@@ -1,6 +1,11 @@
 addEventListener('DOMContentLoaded', (event) => {
 
-  
+  // did you know section
+
+let didYou = document.querySelector('div.ddy')
+let h3 = document.createElement('h3')
+didYou.appendChild(h3)
+h3.textContent = "hello"
   // gets the first 2 animal data
       function get1(){
         const fetchAnimal1 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand/1')
@@ -58,15 +63,12 @@ function get3(){
   })
  }
 
- get1()
- get2()
- get3()
- get4()
+//  get1()
+//  get2()
+//  get3()
+//  get4()
 
   
-
- 
-
    // jquery code
    let btnShow = document.querySelector('button#show_content')
    $(document).ready(function(){
