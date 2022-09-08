@@ -15,19 +15,14 @@ addEventListener('DOMContentLoaded', (event) => {
           let didYou = document.querySelector('div.ddy')
           let h3 = document.createElement('h3')
           didYou.appendChild(h3)
-          h3.textContent = `Did you know the ${animalName1}'s diet consists of ${animalDiet1} and is found in ${animalHabitat1}`
+          h3.textContent = `Did you know the ${data[0].name}'s diet consists of ${data[0].diet} and is found in ${data[0].geo_range}`
           console.log(h3)
-         
-          
-
             image1.src = data[0].image_link
-          
             animalName1.innerHTML = data[0].name
           //   animalInfo.innerText = `Class of animal is ${data.animal_type}`
           //   animalDiet.innerText = `Diet consists of ${data.diet}`
           //  geo.innerText = `This type of ${data.animal_type} is found in ${data.geo_range}`
           //  animalHabitat.innerText = `This ${data.animal_type}'s habitat is ${data.habitat}`
-   
            console.log(data[0])})
       }
 
