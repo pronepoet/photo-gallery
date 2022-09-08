@@ -29,9 +29,11 @@ addEventListener('DOMContentLoaded', (event) => {
 
       //  gets the 2nd batch
       function get2(){
-        const fetchAnimal2 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand2')
+        const fetchAnimal2 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand/2')
         .then(response => response.json())
         .then(data => {
+          let animalName2 = document.querySelector('h5.animal2')
+          animalName2.innerHTML = data[0].name
          let image2 = document.querySelector('img#image2')
          image2.src = data[0].image_link
         })
@@ -40,9 +42,11 @@ addEventListener('DOMContentLoaded', (event) => {
       // gets the third batch
    
 function get3(){
-  const fetchAnimal3 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand3')
+  const fetchAnimal3 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand/3')
   .then(response => response.json())
   .then(data => {
+    let animalName3 = document.querySelector('h5.animal3')
+    animalName3.innerHTML = data[0].name
    let image3 = document.querySelector('img#image3')
    image3.src = data[0].image_link
   })
@@ -51,10 +55,12 @@ function get3(){
 // get's the fourth batch
  function get4(){
 
-  const fetchAnimal4 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand4')
+  const fetchAnimal4 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand/4')
   .then(response => response.json())
   .then(data => {
- let image4 = document.querySelectro('img#image4')
+    let animalName4 = document.querySelector('h5.animal4')
+    animalName4.innerHTML = data[0].name
+ let image4 = document.querySelector('img#image4')
  image4.src= data[0].image_link
   })
  }
