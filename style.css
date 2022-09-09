@@ -56,3 +56,6 @@ footer li :hover {
 #easterEgg{
     display:none;
 }
+.foot{
+  align-items: center;
+}
