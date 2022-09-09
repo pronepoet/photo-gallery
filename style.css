@@ -1,3 +1,6 @@
+body{
+    background-color: #c2d8f1;
+}
 footer{
      /* height:40px; */
     background-color: black;
@@ -22,3 +25,31 @@ footer{
         opacity: 0;
     }
   }
+  #yai{
+   width:5%;
+   float:right;
+  }
+  #extra{
+    display:none;
+  }
+  .more{
+    display:none;
+  }
+  footer li {
+    list-style: none;
+    display: inline-flex;
+    padding-right: 100px;
+}
+
+footer li :hover {
+    color: #EECD59;
+
+}
+
+.footer_msg {
+  color:white
+
+}
+ul .icons{
+    margin-bottom:0;
+}

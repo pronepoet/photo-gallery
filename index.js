@@ -23,7 +23,7 @@ addEventListener('DOMContentLoaded', (event) => {
           //   animalDiet.innerText = `Diet consists of ${data.diet}`
           //  geo.innerText = `This type of ${data.animal_type} is found in ${data.geo_range}`
           //  animalHabitat.innerText = `This ${data.animal_type}'s habitat is ${data.habitat}`
-           console.log(data[0])})
+           console.log(data[1])})
       }
 
 
@@ -65,18 +65,76 @@ function get3(){
   })
  }
 
+ function get5(){
+
+  const fetchAnimal4 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand/5')
+  .then(response => response.json())
+  .then(data => {
+    let animalName5 = document.querySelector('h5.animal5')
+    animalName5.innerHTML = data[0].name
+ let image5 = document.querySelector('img#image5')
+ image5.src= data[0].image_link
+  })
+ }
+
+ function get6(){
+
+  const fetchAnimal4 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand/6')
+  .then(response => response.json())
+  .then(data => {
+    let animalName6 = document.querySelector('h5.animal6')
+    animalName6.innerHTML = data[0].name
+ let image6 = document.querySelector('img#image6')
+ image6.src= data[0].image_link
+  })
+ }
+
+ function get7(){
+
+  const fetchAnimal4 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand/7')
+  .then(response => response.json())
+  .then(data => {
+    let animalName7 = document.querySelector('h5.animal7')
+    animalName7.innerHTML = data[0].name
+ let image7 = document.querySelector('img#image7')
+ image7.src= data[0].image_link
+  })
+ }
+ function get8(){
+
+  const fetchAnimal4 = fetch('https://zoo-animal-api.herokuapp.com/animals/rand/8')
+  .then(response => response.json())
+  .then(data => {
+    let animalName8 = document.querySelector('h5.animal8')
+    animalName8.innerHTML = data[0].name
+ let image8 = document.querySelector('img#image8')
+ image8.src= data[0].image_link
+  })
+ }
+
  get1()
  get2()
  get3()
  get4()
+ get5()
+ get6()
+ get7()
+ get8()
 
   
    // jquery code
    let btnShow = document.querySelector('button#show_content')
-   $(document).ready(function(){
-   $(btnShow).click(function(){
-     $().hide();
+   let extraAnimals = document.querySelector('div#extra')
+   let mayai = document.querySelector('a#easterEgg')
+   $(document).ready(()=>{
+   $(btnShow).click(()=>{
+     $(btnShow).hide();
+     $(extraAnimals).slideToggle()
    })
+$(mayai).click(()=>{
+  $(mayai).hide()
+    $('.more').slideToggle()
+})
 
    })
    //end of jquery
