@@ -17,7 +17,7 @@ footer{
   }
   .blink{
     animation: blinker 1.5s linear infinite;
-    color: red;
+    color: #c2d8f1;
     font-family: sans-serif;
 }
 @keyframes blinker {
@@ -42,14 +42,17 @@ footer{
 }
 
 footer li :hover {
-    color: #EECD59;
+    color: #c2d8f1;
 
 }
 
 .footer_msg {
-  color:white
+  color:#c2d8f1;
 
 }
 ul .icons{
     margin-bottom:0;
+}
+#easterEgg{
+    display:none;
 }

@@ -130,6 +130,7 @@ function get3(){
    $(btnShow).click(()=>{
      $(btnShow).hide();
      $(extraAnimals).slideToggle()
+     $(mayai).show()
    })
 $(mayai).click(()=>{
   $(mayai).hide()
