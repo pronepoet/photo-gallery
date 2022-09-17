@@ -2,10 +2,7 @@ body{
     background-color: #c2d8f1;
     font-family: 'Ubuntu Mono', monospace;
 }
-#head{
-  font-family: 'Comic Neue', cursive;
-  
-}
+
 #head a{
   font-size: 1.25rem;
   font-weight: bolder;
@@ -14,9 +11,9 @@ body{
   margin: 20px 30px;
   
 }
-h2{
-  
-}
+/* h2{
+  font-family: 'Comic Neue', cursive;
+} */
 .zoo{
   
   padding: 0px;
