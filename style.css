@@ -1,11 +1,7 @@
 body{
     background-color: #c2d8f1;
 }
-footer{
-     /* height:40px; */
-    background-color: black;
-    color:aliceblue;
-}
+
 .Site{
     display:flex;
     min-height:100vh;
@@ -25,16 +21,34 @@ footer{
         opacity: 0;
     }
   }
+  /* the easter egg */
   #yai{
    width:5%;
-   float:right;
+   float:left;
+   margin:2rem;
   }
+  #easterEgg{
+    display:none;
+}
   #extra{
     display:none;
   }
   .more{
     display:none;
   }
+  #back-to-top{
+    float:right;
+    margin-bottom: 2rem;
+  }
+  #back-to-top :hover{
+    width:75%;
+  }
+  /* footer */
+  footer{
+    /* height:40px; */
+   background-color: black;
+   color:aliceblue;
+}
   footer li {
     list-style: none;
     display: inline-flex;
@@ -53,9 +67,7 @@ footer li :hover {
 .icons{
     margin-bottom:0;
 }
-#easterEgg{
-    display:none;
-}
+
 .foot{
   align-items: center;
 }
