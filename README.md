@@ -1,6 +1,6 @@
 # Zoo animal photo-gallery
 Project files for Final School project phase 1
-![screenshot](images/photo-gallery.png)
+![screenshot](images/zoo-app-01.png)
 
 ## Technologies Used
 - HTML & CSS (Bootstrap)
