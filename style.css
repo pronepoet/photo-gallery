@@ -2,8 +2,26 @@ body{
     background-color: #c2d8f1;
     font-family: 'Ubuntu Mono', monospace;
 }
-.blink{
+#head{
   font-family: 'Comic Neue', cursive;
+  
+}
+#head a{
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+.li-1{
+  margin: 20px 30px;
+  
+}
+h2{
+  
+}
+.zoo{
+  
+  padding: 0px;
+  
+
 }
 .Site{
     display:flex;
@@ -14,15 +32,23 @@ body{
 .Site-content {
     flex: 1;
   }
+  .marq{
+    padding-bottom: 0px;
+    padding-top: 10px;   
+  }
   .blink{
     animation: blinker 1.5s linear infinite;
     color: #c2d8f1;
-    font-family: sans-serif;
+    font-family: 'Comic Neue', cursive;
+         
 }
 @keyframes blinker {
     50% {
         opacity: 0;
     }
+  }
+  .ac{
+    font-family: 'Comic Neue', cursive;
   }
   /* the easter egg */
   #yai{
@@ -40,8 +66,6 @@ body{
     display:none;
   }
 
-
-
   #btn-back-to-top {
     position: fixed;
     bottom: 20px;
@@ -56,6 +80,9 @@ body{
    color:aliceblue;
    margin:auto;
    text-align:center ;
+}
+footer h3{
+  margin: 1.75rem;
 }
 footer p {
   font-family: 'Comic Neue', cursive;
