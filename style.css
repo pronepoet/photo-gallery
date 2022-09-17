@@ -1,7 +1,10 @@
 body{
     background-color: #c2d8f1;
+    font-family: 'Ubuntu Mono', monospace;
 }
-
+.blink{
+  font-family: 'Comic Neue', cursive;
+}
 .Site{
     display:flex;
     min-height:100vh;
@@ -51,11 +54,17 @@ body{
     /* height:40px; */
    background-color: black;
    color:aliceblue;
+   margin:auto;
+   text-align:center ;
+}
+footer p {
+  font-family: 'Comic Neue', cursive;
 }
   footer li {
     list-style: none;
     display: inline-flex;
-    padding-right: 100px;
+    margin:2rem;
+  
 }
 
 footer li :hover {
